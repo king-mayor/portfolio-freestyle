@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+:root{
+    --main-bg-color: #ff6666;
+    --main-color: #101010;
+    --main-container-color: #f2f2f2;
+    --text-color: #616161;
+}
+
+.my-logo{
+    font-size: 1.1em;
+}
+.my-logo span{
+    color: #ff6666;
+    font-size: 1.1em;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar ul li{
+    list-style: none;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    padding: 0px 15px;
+}
+.nav-bar ul li a:hover{
+    color: cornsilk;
+    background-color: #ff6666;
+}
+.nav-bar ul{
+    display: inline-flex;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+hr{
+    margin-top: 20px;
+}
+.image img{
+    margin-top: 100px;
+    height: 600px;
+    width: 300px;
+    border-radius: 150px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.profile-intro{
+    margin-top: 50px;
+    text-align: center;
+}
+.profile-intro span{
+    color: #ff6666;
+}
+.profile-intro h5{
+    font-size: 1.2em;
+}
+.profile-intro h2{
+    font-size: 1.7em;
+}
+.profile-intro h3{
+    font-size: 1.4em;
+}
+.services h2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 800;
+    color: #ff6666;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    text-align: center;
+    padding: 20px 20px;
+}
+.container > div{
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: var(--text-color);
+}
+.container button{
+    margin-top: 25px;
+    background-color: #ff6666;
+    color: white;
+    border: 2px solid var(--main-bg-color);
+    padding: 5px 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.container button:hover{
+    cursor: pointer;
+}
+.container i{
+    font-size: 1.9em;
+    margin-bottom: 10px;
+    color: var(--main-bg-color);
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    color: var(--main-bg-color);
+}
+.skills-logo{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.8em;
+    color: #181818;
+}
+.skills-logo:hover{
+    transform: scale(0.3) translateX(15px);
+    transition: 0.8s;
+}
+.text h4{
+    font-size: 1.8em;
+    margin-top: 40px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+}
+.hire-me{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hire-me button{
+    padding: 5px 15px;
+    background-color: var(--main-bg-color);
+    color: white;
+    letter-spacing: 3px;
+    border: 2px solid var(--main-bg-color);
+    text-transform: uppercase;
+}
+.hire-me button:hover{
+    cursor: pointer;
+}
+.contact{
+    margin-top: 30px;
+    font-size: 1.7em;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+}
+.social-links{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5em;
+}
+.social-links a {
+    color: var(--main-color);
+    cursor: pointer;
+}
+.footer{
+    font-size: 0.8em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: darkgray;
+    display: flex;
+    align-items: center;
+}
+@media all and (max-width: 700px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    html, body{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .nav-bar ul li a{
+        padding: 0px 5px;
+    }
+}
